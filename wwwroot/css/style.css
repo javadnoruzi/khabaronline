@@ -336,3 +336,56 @@ footer{
     width: 100%;
     height: 120px;
 }
+.menu-humber{
+  display: none;
+}
+
+@media screen and  (max-width : 768px){
+    
+.nav-topheader{
+    width: 100%;
+    margin: 0;
+    max-width: max-content;
+}
+.nav-main-menu{
+   position: absolute;
+   width: 80%;
+   left: 0;
+   z-index:10;
+   top:0;
+   height: 100%;
+
+}
+.nav-main-menu li {
+    display: block;
+}
+.nav-main-menu li::before{
+    content:'\F067';
+   color: white;
+}
+.nav-main-menu li {
+    padding-left: var(--icon-space);
+  }
+  
+  .nav-main-menu li::before {
+    content: "\f067"; /* FontAwesome Unicode */
+    font-family: FontAwesome;
+    display: inline-block;
+    margin-left: calc( var(--icon-space) * -1 );
+    width: var(--icon-space);
+  }
+.top-menu-list{
+    display: none;
+}
+.sec-two{display: none;}
+.sec-three{display: none;}
+.sec-one{width: 100%;}
+.menu-humber{
+    display: block;
+    width: 100%;
+    background-color: #595782;
+    font-size:  1.3rem;
+    color: white;
+    padding-right: 16px;
+}
+}

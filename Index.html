@@ -64,6 +64,9 @@
             </div>
 
         </nav>
+        <div class="menu-humber">
+            <i id="menu-hum" class="fa-solid fa-bars"></i>
+        </div>
     </header>
 
     <main>
@@ -634,6 +637,24 @@
                 }
             }
         });
+     
+
+
+        var menuHumIcon = document.getElementById('menu-hum');
+    var navMainMenu = document.querySelector('.nav-main-menu');
+
+    // اضافه کردن رویداد کلیک به آیکون منو
+    menuHumIcon.addEventListener('click', function () {
+        // چک کردن وضعیت نمایش دیو
+        if (navMainMenu.style.display === 'none' || navMainMenu.style.display === '') {
+            navMainMenu.style.display = 'block'; // نمایش دیو اگر مخفی بود
+        } else {
+            navMainMenu.style.display = 'none'; // مخفی کردن دیو اگر نمایش داده شده بود
+        }
+    });
+
+
+
     </script>
 </body>
 
